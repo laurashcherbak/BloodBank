@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-md navbar-dark navbar-full" style="background-color:#932007; font-size: 20px;" >
+  <a class="navbar-brand" href="/" style="font-family:Arial, Helvetica, sans-serif;">Online Blood Bank System</a>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      {% if session.logged_in %}
+        <li class="nav-item default"><a class="nav-link" href="/donate">Add donor</a></li>
+        <li class="nav-item default"><a class="nav-link" href="/donorlogs">Donors List</a></li>
+        <li class="nav-item default"><a class="nav-link" href="/bloodform">Add blood</a></li>
+        <li class="nav-item default"><a class="nav-link" href="/notifications">Blood Requests</a></li>
+        <!-- <li class="nav-item default"><a class="nav-link" href="/contact">Contact Us</a></li> -->
+      {% else %}
+        <li class="nav-item default"><a class="nav-link" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/contact">Contact us</a></li>
+      {% endif %}
+    </ul>
+	
+	<ul class="navbar-nav mr-right">
+    {% if session.logged_in %}
+    <li class="nav-item default"><a href="/dashboard">Dashboard</a></li>
+    &nbsp;&nbsp;&nbsp;<li class="nav-item default"><a href="/logout">Logout</a></li>
+    {% else %}
+    &nbsp;&nbsp;&nbsp;<li class="nav-item default"><a href="/register">Register</a></li>
+    &nbsp;&nbsp;&nbsp;<li class="nav-item default"><a href="/login">Login</a></li>
+    {% endif %}
+	</ul>
+
+  </div>
+</nav>

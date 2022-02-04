@@ -1,3 +1,5 @@
+[![Python application](https://github.com/laurashcherbak/BloodBank/actions/workflows/python-app.yml/badge.svg)](https://github.com/laurashcherbak/BloodBank/actions/workflows/python-app.yml)
+
 # Online Blood Bank System
 Report Link: 
 ## Flask Commands:

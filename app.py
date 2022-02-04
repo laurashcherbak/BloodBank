@@ -13,7 +13,7 @@ app.secret_key='some secret key'
 #Config MySQL
 app.config['MYSQL_HOST']='sql11.freemysqlhosting.net'
 app.config['MYSQL_USER']='sql11469232'
-app.config['MYSQL_PASSWORD']='mqtNlcAvZS'#'lssnV(909%WYQ2Qu'
+app.config['MYSQL_PASSWORD']='mqtNlcAvZS'
 app.config['MYSQL_DB']='sql11469232'
 app.config['MYSQL_CURSORCLASS']='DictCursor'
 #init MySQL

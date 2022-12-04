@@ -50,6 +50,11 @@ Use any database:
 USE bloodbank;
 ```
 
+Admin web hosting panel:
+```
+https://www.pythonanywhere.com/user/bbank/
+```
+
 ## Snapshots
 ### Home Page
 ![](snapshots/home.png)
